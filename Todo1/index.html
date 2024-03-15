@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="fgh.jpg" alt="Header Image">
+        <h1>Task Management App</h1>
+        <div class="task">
+            <input type="checkbox" id="task1">
+            <label for="task1" class="title">Buy groceries:_</label>
+            <p class="description"> Remember to get milk, eggs, and bread.</p>
+            <button onclick="editTask('task1')">Edit</button>
+            <button onclick="deleteTask('task1')">Delete</button>
+        </div>
+
+        <div class="task">
+            <input type="checkbox" id="task2">
+            <label for="task2" class="title">Finish project report:_</label>
+            <p class="description">Include data analysis and conclusions.</p>
+            <button onclick="editTask('task2')">Edit</button>
+            <button onclick="deleteTask('task2')">Delete</button>
+        </div>
+
+        <div class="task">
+            <input type="checkbox" id="task3">
+            <label for="task3" class="title">Get to work:_</label>
+            <p class="description">Don't forget the required gadgets.</p>
+            <button onclick="editTask('task3')">Edit</button>
+            <button onclick="deleteTask('task3')">Delete</button>
+        </div>
+
+        <div class="task">
+            <input type="checkbox" id="task4">
+            <label for="task4" class="title">Get to the airport:_</label>
+            <p class="description">Get your luggages from the park</p>
+            <button onclick="editTask('task4')">Edit</button>
+            <button onclick="deleteTask('task4')">Delete</button>
+        </div>
+        <!--Add more tasks here-->
+
+        <div class="add-task">
+            <input type="text" id="newTaskTitle" placeholder="Task title">
+            <input type="text" id="newDescriptpion" placeholder="Task descrition">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
